@@ -52,19 +52,3 @@
 | Event delegation | Parent DOM listener checks child target | custom dispatcher or framework event system | JavaScript DOM makes delegation natural; Python needs an equivalent event layer. |
 | Memory inspection | `process.memoryUsage()` in Node | `sys.getsizeof`, `tracemalloc` | JavaScript reports process heap; Python can inspect object size and allocation traces. |
 | Benchmarking | Node `performance` or subprocess timing | Jupyter `%timeit`, `timeit`, system libraries | Python/Jupyter has built-in timing magics; JavaScript usually needs Node APIs or external runners. |
-
-## Short Summary
-
-| Concept | Lang A: JavaScript | Lang B: Python |
-|---|---|---|
-| Typing | Dynamic | Dynamic with optional type hints |
-| Concurrency | Promises, Async/Await, Event Loop | Async/Await, asyncio, Threads/Processes |
-| Encapsulation | Modules, Closures, `#private` fields | Modules, `_private` convention, Properties |
-| OOP Model | Class syntax over prototype chain | Class/object model with explicit `self` |
-| Error Handling | `try/catch/finally`, `throw` | `try/except/finally`, `raise` |
-| Modules | ES Modules/CommonJS | Python modules/packages |
-| Collections | Arrays and Objects | Lists and Dictionaries |
-| Null Handling | `null` and `undefined` | `None` |
-| Async Streams | Async Generators with `for await` | Async Generators with `async for` |
-| Memory Analysis | Node process heap metrics | `sys.getsizeof`, `tracemalloc` |
-| Best Fit | Browser apps, event-driven UI, Node services | Scripting, data processing, backend tools, automation |
